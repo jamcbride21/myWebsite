@@ -6,22 +6,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Overview</title>
   <style>
+    body {
+      background: linear-gradient(rgb(207, 66, 207), rgb(165, 165, 165))
+    }
+    html {
+      height: 100%;
+    }
     .headingList {
+      float: left; 
+      width: 16%;
       display:inline;
-      margin-right: 55px;
       font-size: 20px;
       font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-      border: 5px solid rgb(17, 148, 17);
       }
+    .headingListUL {
+      width: 100%;
+    }
+    .footerList {
+      
+      display: inline;
+      position: relative;
+      box-sizing: border-box;
+      border-spacing: 0px;
+      margin-right: 45px;
+      
+    }
     h1  {
       text-align:center;
         }
   </style>
 </head>
 <body>
-  <header>McBride Education</header>
+  <header>
+    McBride Education
+  </header>
   <h1>Overview</h1>
-  <ul>
+  <ul class="headingListUL">
     <li class="headingList"><a href="index.html" target="_blank">Overview</a></li>
     <li class="headingList"><a href="sub_pages/videosAndPictures.html" target="_blank">Videos/Pictures</a></li>
     <li class="headingList"><a href="sub_pages/testimonials.html" target="_blank">Testimonials</a></li>
@@ -33,12 +53,15 @@
   <br>
   <br>
     <div>McBride Education is an innovative student driven global platform. Striving to offer the best in both in-classroom and online experiences. Teaching with a combination of a self-proprietary curriculum and partnerships with key ESL bookclubs.</div>
+
+     <!-- I can make a C# thingy for a student placement test  -->
+    
   <footer>
     <ul>
-      <li>Contact Us</li>
-      <li>Other Stuff</li>
-      <li>Schedule an Appointment</li>
-      <li>Careers</li>
+      <li class="footerList">Contact Us</li>
+      <li class="footerList">Other Stuff</li>
+      <li class="footerList">Schedule a Personal Evaluation</li>
+      <li class="footerList">Want to Teach? Click Here!</li>
     </ul>
 </body>
 </html>
