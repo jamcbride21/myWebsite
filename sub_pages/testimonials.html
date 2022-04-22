@@ -16,6 +16,34 @@
 h1 {
   text-align:center;
 }
+.container {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0;
+}
+
+/* Clear floats after containers */
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.container img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.container span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
   </style>
 </head>
 <body>
@@ -30,6 +58,30 @@ h1 {
      <li class="headingList"><a href="feesAndPackages.html" target="_blank">Fees/Packages</a></li>
      <li class="headingList"><a href="FAQ.html" target="_blank">FAQ</a></li>
    </ul>
-   <h2>Videos and Pictures</h2>
+   <h2>Testimonials</h2>
+   <div class="container">
+    <!--<img src="bandmember.jpg" alt="Avatar" style="width:90px">-->
+    <p><span>LeeHar Wong</span> Parent of Student</p>
+    <p>Jacob and his team do great job! Content is great but also support for class and computer when need. Thanks ;)</p>
+  </div>
+  
+  <div class="container">
+    <!--<img src="avatar_g2.jpg" alt="Avatar" style="width:90px">-->
+    <p><span >Goh Bee Gee</span> Parent of Student</p>
+    <p>Great job! My boy loves Jacob and his teaching style. They have same humor. Always laughing in class.</p>
+  </div>
+
+  <div class="container">
+    <!--<img src="avatar_g2.jpg" alt="Avatar" style="width:90px">-->
+    <p><span >Jason Wu</span> Student</p>
+    <p>The teachers at McBride Education helped me compete better for my university exams. I would reccomend McBride Education for anyone wanting to learn English.</p>
+  </div>
+
+  <div class="container">
+    <!--<img src="avatar_g2.jpg" alt="Avatar" style="width:90px">-->
+    <p><span >Hayon Xiaomao</span> Student</p>
+    <p>I went from speaking 0 english to making new international friends in only few months. Very good job!!!</p>
+  </div>
+
 </body>
 </html>
