@@ -5,6 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ</title>
+  <style>
+     body {
+      background: linear-gradient(rgb(249, 226, 249), rgb(255, 255, 255))
+    }
+    html {
+      height: 100%;
+    }
+    .headingList {
+      float: left; 
+      width: 16%;
+      display:inline;
+      font-size: 20px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+      .accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+  </style>
 </head>
 <body>
   <header>
@@ -15,10 +54,76 @@
      <li class="headingList"><a href="videosAndPictures.html" target="_blank">Videos/Pictures</a></li>
      <li class="headingList"><a href="testimonials.html" target="_blank">Testimonials</a></li>
      <li class="headingList"><a href="services.html" target="_blank">Services</a></li>
-     <li class="headingList"><a href="feesAndPackages.html" target="_blank">Fees/Packages</a></li>
+     <li class="headingList"><a href="freeresources.html" target="_blank">Free Resources</a></li>
      <li class="headingList"><a href="FAQ.html" target="_blank">FAQ</a></li>
    </ul>
-   <h2>Videos and Pictures</h2>
+   <br>
+   <br>
+
+   <h2>FAQ</h2>
+   <br>
+   <button class="accordion">What happens if the student is late to class?</button>
+<div class="panel">
+  <p>The teacher will wait in the classroom until the alloted time slot is finished. We ask teachers to not go over the time limit as it interferes with scheduling. </p>
+</div>
+
+<button class="accordion">What if the teacher is a no show?</button>
+<div class="panel">
+  <p>In the unfortunate possibilty a teacher does not show up, we will not count that class against your payment and also offer you an extra free class for your troubles. Please note, teachers can have emergencies too, thanks for your understanding.</p>
+</div>
+
+<button class="accordion">What payment options does McBride Education allow?</button>
+<div class="panel">
+  <p>McBride Education accepts the following forms of payment: WeChat, transferWise, paypal, and direct bank transfers</p>
+</div>
   
+<button class="accordion">I need to cancel my package, will I get my money back?</button>
+<div class="panel">
+  <p>Yes, if there are classes left in your package you will be reimbursed for the remainder number of classes. Please note, if the package was purchased with a discount you will be charged the original full price for each class and your reimbursement will reflect this. </p>
+</div>
+
+<button class="accordion">Can I choose the teacher that I want?</button>
+<div class="panel">
+  <p> Yes! As long as that teacher's availability is open for your preffered time slot. To protect the interest of other students and the privacy of the teacher, teachers' schedules will not be publically posted.</p>
+</div>
+
+<button class="accordion">How many weeks in advance can I book classes?</button>
+<div class="panel">
+  <p> You can book classes two weeks in advance.</p>
+</div>
+
+<button class="accordion">I've cancelled a lot of classes but before the cancellation policy limit. Does this effect my payment or status.</button>
+<div class="panel">
+  <p> The number of classes will remain the same. However, please note, cancelling often might make the teacher less willing to accept future bookings.</p>
+</div>
+
+<button class="accordion">There are no available times for 'test prep' classes. What can I do?</button>
+<div class="panel">
+  <p> Due to the nature of these lessons being highly personalized there are only a few time slots open per month for this course. Please email us at the contact us page to be put onto our waiting list.</p>
+</div>
+
+<button class="accordion">What equipment do I need to have a succesful class?</button>
+<div class="panel">
+  <p> A computer with at least 4 gig of RAM. A high quality internal or external camera. A headset or headphones with a microphone attached. A touch screen device or a mouse to interact with the platform.</p>
+</div>
+
+
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+      } else {
+        panel.style.display = "block";
+      }
+    });
+  }
+  </script>
+
 </body>
 </html>
