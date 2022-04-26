@@ -6,15 +6,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Services</title>
   <style>
+     html {
+      height: 100%;
+    }
+    .headingList {
+      float: left; 
+      width: 16%;
+      display:inline;
+      font-size: 20px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    .headingListUL {
+      width: 100%;
+    }
   
-    table {
+    .servicesTable {
   border-collapse: collapse;
   width: 100%;
 }
 
-th, td {
+.servicesTHTD {
   text-align: left;
-  padding: 8px;
+  padding: 6px;
 }
 
 tr:nth-child(even) {
@@ -23,6 +36,18 @@ tr:nth-child(even) {
 h2 {
   text-align:center;
 }
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #DDD;
+}
+
+tr:hover {background-color: #D6EEEE;}
   </style>
 </head>
 <body>
@@ -37,6 +62,8 @@ h2 {
      <li class="headingList"><a href="feesAndPackages.html" target="_blank">Fees/Packages</a></li>
      <li class="headingList"><a href="FAQ.html" target="_blank">FAQ</a></li>
    </ul>
+   <br>
+   <br>
    <h2>Services </h2>
    <form>
      <select>
@@ -48,44 +75,111 @@ h2 {
        <option>Other</option>
      </select>
    </form>
-   <table>
-     <tr>
-       <th>Information</th>
-       <th>One-on-One Classes</th>
-       <th>Group Classes</th>
-       <th>Reading Corner</th>
-       <th>Test Prep</th>
+   <table class="servicesTable">
+     <tr class="servicesTr">
+       <th class="servicesThTd">Information</th>
+       <th class="servicesThTd">One-on-One Classes</th>
+       <th class="servicesThTd">Group Classes</th>
+       <th class="servicesThTd">Reading Corner</th>
+       <th class="servicesThTd">Test Prep</th>
      </tr>
-     <tr>
-      <td>Fees</td>
-      <td>$30/hour</td>
-      <td>$20/hour</td>
-      <td>$20/hour</td>
-      <td>$40/hour</td>
+     <tr class="servicesTr">
+      <td class="servicesThTd">Fees</td>
+      <td class="servicesThTd">$30/hour</td>
+      <td class="servicesThTd">$20/hour</td>
+      <td class="servicesThTd">$20/hour</td>
+      <td class="servicesThTd">$40/hour</td>
      </tr>
-     <tr>
-       <td>Cancellation Policy</td>
-       <td> &lt;24 hours</td>
-       <td> &lt;48 hours</td>
-       <td> &lt;48 hours</td>
-       <td> No Refunds</td>
+     <tr class="servicesTr">
+       <td class="servicesThTd">Cancellation Policy</td>
+       <td class="servicesThTd"> &lt;24 hours</td>
+       <td class="servicesThTd"> &lt;48 hours</td>
+       <td class="servicesThTd"> &lt;48 hours</td>
+       <td class="servicesThTd"> No Refunds</td>
      </tr>
-     <tr>
-       <td>Availability</td>
-       <td>Yes</td>
-       <td>Yes</td>
-       <td>Yes</td>
-       <td>No Availability</td>
+     <tr class="servicesTr">
+       <td class="servicesThTd">Availability</td>
+       <td class="servicesThTd">Yes</td>
+       <td class="servicesThTd">Yes</td>
+       <td class="servicesThTd">Yes</td>
+       <td class="servicesThTd">No Availability</td>
      </tr>
-     <tr>
-       <td>Materials</td>
-       <td>Provided</td>
-       <td>Provided</td>
-       <td>Mixed</td>
-       <td>N/A Based on Location</td>
+     <tr class="servicesTr">
+       <td class="servicesThTd">Materials</td>
+       <td class="servicesThTd">Provided</td>
+       <td class="servicesThTd">Provided</td>
+       <td class="servicesThTd">Mixed</td>
+       <td class="servicesThTd">N/A Based on Location</td>
      </tr>
    </table>
+   <!--Add uhhhh multiple packages. Such as 20 class 10% discount idk-->
+   <br>
+   <br>
+   <h2>Dicounts Offered</h2>
    
+   <table>
+    <tr>
+      <th>Class Type</th>
+      <th>#Purchased</th>
+      <th>Discount%</th>
+      <th>Money Saved</th>
+    </tr>
+    <tr>
+      <td>One-on-One</td>
+      <td>10 classes</td>
+      <td>5%</td>
+      <td>$15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>30 classes</td>
+      <td>20%</td>
+      <td>$180</td>
+    </tr>
+    <tr>
+      <td>Group Classes</td>
+      <td>10 classes</td>
+      <td>5%</td>
+      <td>$10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>30 classes</td>
+      <td>20%</td>
+      <td>$120</td>
+    </tr>
+    <tr>
+      <td>Reading Corner</td>
+      <td>10 classes</td>
+      <td>5%</td>
+      <td>$10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>30 classes</td>
+      <td>20%</td>
+      <td>$120</td>
+    </tr>
+    <tr>
+      <td>Test Prep</td>
+      <td>10 classes</td>
+      <td>10%</td>
+      <td>$40</td>
+    </tr>  <tr>
+      <td></td>
+      <td>20 classes</td>
+      <td>25%</td>
+      <td>$200</td>
+    </tr>
+  </table>
+    <br>
+
+      <p>
+        ***Discounts and availability of discounts are subject to change. Please confirm promotions are still active and ongoing before purchasing a package based off of discounts offered. 
+      </p>
+ 
+   
+
 
   
 </body>
