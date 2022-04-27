@@ -23,19 +23,23 @@
       width: 100%;
     }
     #footerList {
-      
-      display: inline;
-      position: relative;
+      position: fixed;
+      bottom: 40px;
       box-sizing: border-box;
       border-spacing: 0px;
       width: auto;
-      margin-right: 100px;
         }
+      #footerListZ {
+        display: inline;
+        margin-right: 100px;
+
+      }
+
       #footer {
             position: fixed;
             padding: 10px 10px 0px 10px;
             bottom: 0;
-            width: 100%;
+            width: 90%;
             /* Height of the footer*/ 
             height: 40px;
             background: rgb(255, 255, 255);
@@ -66,10 +70,10 @@
      <!-- need to add automatic translator ;)-->
     
   <footer>
-    <ul>
-      <li id="footerList"><a href="footer_pages/contactus.html" target="_blank">Contact Us!</a></li>
-      <li id="footerList">Schedule a Personal Evaluation</li>
-      <li id="footerList">Want to Teach? Click Here!</li>
+    <ul id="footerList">
+      <li id="footerListZ"><a href="footer_pages/contactus.html" target="_blank">Contact Us!</a></li>
+      <li id="footerListZ"><a href="footer_pages/schedule.html" target="_blank">Schedule a Personal Evaluation</a></li>
+      <li id="footerListZ"><a href="footer_pages/wanttoteach.html" target="_blank">Want to Teach? Click Here!</a></li>
     </ul>
     <div id="footer">McBride Education | jamcbride21@gmail.com   |   Website created and maintained by Jacob McBride 
   </div>
