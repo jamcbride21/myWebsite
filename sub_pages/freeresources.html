@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Free Resources</title>
   <style>
+    html {
+      height: 100%;
+    }
+    .headingList {
+      float: left; 
+      width: 16%;
+      display:inline;
+      font-size: 20px;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      }
+    .headingListUL {
+      width: 100%;
+    }
+    
     table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -21,13 +35,37 @@ th, td {
 tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
+
+#footerList {
+      position: relative;
+      bottom:0px;
+      box-sizing: border-box;
+      border-spacing: 0px;
+      width: auto;
+        }
+      #footerListZ {
+        display: inline;
+        margin-right: 100px;
+
+      }
+
+      #footer {
+            position: relative;
+            padding: 10px 10px 0px 10px;
+            bottom: 0px;
+            width: 90%;
+            /* Height of the footer*/ 
+            height: 30px;
+            background: rgb(255, 255, 255);
+        }
+
     </style>
 </head>
 <body>
   <header>
     McBride Education
    </header>
-   <ul>
+   <ul class="headingListUL">
      <li class="headingList"><a href="../index.html" target="_blank">Overview</a></li>
      <li class="headingList"><a href="videosAndPictures.html" target="_blank">Videos/Pictures</a></li>
      <li class="headingList"><a href="testimonials.html" target="_blank">Testimonials</a></li>
@@ -75,9 +113,17 @@ tr:nth-child(odd) {
       <td>Advanced</td>
     </tr>
   </table>
-  
+ 
     
-  
+  <footer>
+    <ul id="footerList">
+      <li id="footerListZ"><a href="../footer_pages/contactus.html" target="_blank">Contact Us!</a></li>
+      <li id="footerListZ"><a href="../footer_pages/schedule.html" target="_blank">Schedule a Personal Evaluation</a></li>
+      <li id="footerListZ"><a href="../footer_pages/wanttoteach.html" target="_blank">Want to Teach? Click Here!</a></li>
+    </ul>
+    <div id="footer">McBride Education | jamcbride21@gmail.com   |   Website created and maintained by Jacob McBride 
+  </div>
+  </footer>
   
 </body>
 </html>
